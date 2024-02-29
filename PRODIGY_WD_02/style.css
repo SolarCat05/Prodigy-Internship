@@ -1,0 +1,54 @@
+.hidden{
+    display: none;
+}
+
+body{
+    text-align: center;
+    padding: 100px 0px;
+    background-color: cyan;
+    font-family: 'Barlow', sans-serif;
+}
+
+.stopwatch{
+    background-color:rgb(255,255,255,0.7);
+    margin: 0px 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#timer{
+    font-size: 50px;
+}
+
+.stopwatch-buttons button{
+    padding: 8px 15px; 
+    border-radius: 15px; 
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.start,.resume{
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+.stop{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.lap ,.reset{
+    background-color:#DEDEDE;
+    border-color: gray;
+}
+
+hr{
+    width: 50%;
+    padding-bottom: 10px;
+    border: none;
+    border-top: 2px gray solid;
+
+}

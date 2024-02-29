@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css'>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="tic-tac-toe">
+
+        <h2>TIC TAC TOE</h2>
+        
+        <div class="t-t-t-b" >
+            <input type="text" class=""  id="one"  readonly>
+  
+            <input type="text" class="" id="two" readonly>
+ 
+            <input type="text" class="" id="three" readonly>
+
+            <input type="text" class="" id="four" readonly>
+
+            <input type="text" class=""  id="five" readonly>
+     
+            <input type="text" class="" id="six" readonly>
+    
+            <input type="text" class="" id="seven" readonly>
+   
+            <input type="text" class=""  id="eight" readonly>
+            
+            <input type="text" class="" id="nine" readonly>
+        </div>
+
+        <div>
+            <button onclick="gameRestart()">RESTART</button>
+        </div>
+
+        <div class="modalbox hidden">
+            <div class="modal choose-option">
+                <h3>Choose your marker:</h3>
+                <div class="button-area">
+                    <span class="x-marker">X</span>  &ensp;
+                    <span class="o-marker">O</span>
+                </div>
+            </div>
+            <div class="modal end-game hidden">
+                <h3 class="end-game-message"></h3>
+                <button onclick="gameRestart()">PLAY AGAIN</button>
+            </div>
+        </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+    <script src="aiscript.js"></script>
+
+
+</body>
+</html>

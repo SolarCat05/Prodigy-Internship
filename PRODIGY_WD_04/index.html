@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Aarya Kasbe
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Aarya Kasbe     
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!--  PROFILE SECTION  -->
+    <section id="profile" >
+        <div class="section__text">
+            <p class="section__text__p1">Hello,I'm <b class="title">Aarya kasbe</b></p>
+            <p class="section__text__desc">Beginner Fullstack Developer</p>
+     
+        <div class="btn-container">
+            <button class="btn btn-color-1">Download CV</button>
+           
+        </div>  
+        <!--
+        <div class="socials-container">
+            <img src="./assets/linkedin.png" alt="linkedIn profile">
+            <img src="./assets/github.png" alt="github profile">
+        </div>
+         -->
+        
+        </div>    
+        <div class="pic-container">
+            <img src="./assets/ProfilePic.jpg" alt="profile-picture" style="border-radius: 60%;">
+        </div>
+         
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <!--<p class="section__text"> Get to know more</p>-->
+        <h1 class="title"> About Me</h1>
+        <div class="about-container">
+            <div class="section__pic-container">
+                <img src="./assets/ProfilePic.jpg" alt="about-me-picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <!--<div class="about-container-2">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience" class="icon">
+                        <h3>Experience</h3>
+                        <p>None</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education" class="icon">
+                        <h3>Education</h3>
+                        <p>Diploma in Computer Eng.<br>B.tech in Computer Eng.</p>
+                    </div>
+                </div>-->
+                <div class="text-container">
+                    <div class="text-container-inside">
+                    <div>
+                        <img src="./assets/hand.png" class="icon">
+                    </div>
+                    <p>
+                       Hey there!My name is Aarya.I am from pune,India.My hobbies are figure drawing,cooking,coding(sometimes) and gaming.I do website development,the stack i use is the Mern Stack but without the 'r' i guess?
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <!--<p class="section__text">Explore My</p>-->
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+            <div class="experience-details">
+                <p class="section__text__p1">Frontend Development</p>
+                <div class="article-container">
+                <article>
+                    <img src="./assets/html.png" alt="list-style" class="icon">
+                    <div>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/css.png" alt="list-style" class="icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/javascript.svg" alt="list-style" class="icon">
+                    <div>
+                        <h3>Javascript</h3>
+                        <p>Basic</p>  
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/react.png" alt="list-style" class="icon">
+                    <div>
+                        <h3>React js</h3>
+                        <p>Beginner</p>  
+                    </div>
+                </article>
+                </div>
+            </div>
+
+            <div class="experience-details">
+                <p class="section__text__p1">Backend Development</p>
+                <div class="article-container">
+                <article>
+                    <img src="./assets/javascript.svg" alt="list-style" class="icon">
+                    <div>
+                        <h3>Javascript</h3>
+                        <p>Basic</p>  
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/node.png" alt="list-style" class="icon">
+                    <div>
+                        <h3>Node js</h3>
+                        <p>Beginner</p>  
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/express.png" alt="list-style" class="icon">
+                    <div>
+                        <h3>Express js</h3>
+                        <p>Beginner</p>  
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/mongo.png" alt="list-style" class="icon">
+                    <div>
+                        <h3>MongoDB</h3>
+                        <p>Intermediate</p>  
+                    </div>
+                </article>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="project-1">
+                <h3 class="">Todo List</h3>
+                
+                <p >A todo list online webiste</p>
+                <button  class="btn-links"><a href="https://github.com/SolarCat05/Todoey">Github Link</a></button>
+            </div>
+            <div class="project-1">
+                <h3 class="">Apparels website</h3>
+                
+                <p >An Ongoing Website for Apparels<br>(E-comerce Website)</p>
+                <button  class="btn-links"><a href="https://github.com/SolarCat05/Apparels">Github Link</a></button>
+            </div>
+            <div class="project-1">
+                <h3 class="">An online Calculator</h3>
+                
+                <p >A very traditional calculator<br>(Need Imporvements)</p>
+                <button class="btn-links"><a href="https://github.com/SolarCat05/Calculator">Github Link</a></button>
+            </div>
+        </div>
+    </section>
+
+<div class="contact_full">
+    <section id="contact">
+        <!--<p class="section__text">Get in touch</p>-->
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+        <div class="contact-details">
+            <div class="contact-details-1">
+                <div>
+                    <img src="./assets/email-icon.png" alt="email-icon" class="icon">
+                </div>
+                <div>
+                    <p><a href="https://mail.google.com/mail/">kasbeaarya05@gmail.com</a></p>
+                </div>
+            </div>
+            <div  class="contact-details-1">
+                <div>
+                    <img src="./assets/linkedin.png" alt="linkedIn-icon" class="icon">
+                </div>
+                <div>
+                    <p><a href="https://www.linkedin.com/in/aarya-kasbe-87bab3227/">LinkedIn</a></p>
+                </div>
+            </div>
+            <div class="contact-details-1">
+                <div>
+                    <img src="./assets/github.png" alt="github-icon" class="icon">
+                </div>
+                <div>
+                    <p><a href="https://github.com/SolarCat05">Github</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    </section>
+
+
+    <footer>
+        <a href="#profile" style="text-decoration: none;color: rgb(85,85,85);">Scroll to top</a>
+        <p>Copyright ©2023 Aarya Kasbe. All rights reserved.</p>
+    </footer>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

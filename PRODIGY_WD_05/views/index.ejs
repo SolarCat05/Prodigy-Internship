@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--  home image   -->
+    <div class="home_img">
+        <p>REST Countries API integration</p>
+    </div>
+
+    <!--SELECTING THE COUNTRY-->
+    <div class="Select">
+        <p>Select Country</p>
+        <form method="post" action="/form">
+        <select id="country" name="country_list" value="Select an option" >
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Canada">Canada</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Finland">Finland</option>
+            <option value="Germany">Germany</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="Kuwait">Kuwait</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Oman">Oman</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Qatar">Qatar</option>
+        </select>
+        <input type="submit" value="submit" name="submit">
+        </form>
+    </div>
+
+    <!-- SHOWING ALL COUNTRY INFORMATION  -->
+    <div class="show_country">
+        <% if(locals.data){%>
+        <div class="country_info">
+
+            <!-- COUNTRY FLAG -->
+            <div class="country_flag">
+                    <img src=<%= flag %>>
+            </div>
+        
+            <div class="country_details">
+            <!-- COUNTRY NAME -->
+            <div class="country_name">
+                    Name: <%=data[0].name.common%>
+            </div>
+
+            <!-- COUNTRY CAPITAL -->
+            <div class="country_capital">
+                Capital: <%= data[0].capital  %>
+            </div>
+
+            <!--COUNTRY POPULATION-->
+             <div class="country_population">
+                Population: <%= data[0].population %>
+             </div>
+
+            <!--COUNTRY TIMEZONE -->
+             <div class="country_timezone">
+                Timezones: <%= data[0].timezones %>
+             </div>
+                             
+            </div>
+        </div>
+        <% }%>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

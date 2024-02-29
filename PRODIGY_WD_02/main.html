@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <title>StopWatch Web Application</title>
+</head>
+<body>
+
+
+    <div class="stopwatch">
+
+        <h2 >STOP WATCH</h2>
+
+        <div id="timer">00:00.00</div>
+
+        <div class="stopwatch-buttons">
+            <button onclick="resetFunction()" class="reset">Reset</button>
+            <button onclick="lapFunction()" class="lap" id="lap" disabled>Lap</button>
+            <button onclick="resumeFunction()" class="resume">Resume</button>
+            <button onclick="stopFunction()" class="stop">Stop</button>
+            <button onclick="startFunction()" class="start">Start</button>
+         
+        </div>
+
+        <div id="lap">
+            <hr class="hidden">
+            <b class="hidden" id="laptext">Lap Times</b>
+            <div id="lap-times">
+                
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    
+    <script src="script.js"></script>  
+</body>
+</html>

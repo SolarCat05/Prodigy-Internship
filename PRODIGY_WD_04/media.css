@@ -1,0 +1,144 @@
+/* Mobile Devices */
+@media screen and (max-width:480px){
+    body{
+        text-align: center;
+    }
+    section{
+        margin: 0 2rem;
+    }
+    article{
+        font-size: 1rem;
+    }
+
+    /* PROFILE */
+
+    #profile{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        gap: 0;
+      
+    }
+    .pic-container{    
+        margin: auto 0;  
+        height: 200px;
+        width: 200px;
+    }
+    .section__text__p1,.section__text__desc{
+        font-size: 1.3rem;
+    }
+    .title{
+        font-size:2rem;
+    }
+
+    /* ABOUT */
+
+    #about{
+        
+    }
+   
+    .text-container-inside p{
+        font-size: 1rem;
+    }
+   
+    .about-container{
+        margin-top: 1.4rem;
+        flex-wrap: wrap;
+    }
+
+    .about-container-2{
+        flex-wrap: wrap;
+    }
+
+    .section__pic-container{
+        margin: 0 auto;
+    }
+    
+    .section__pic-container img{
+        width: 150px;
+    }
+
+    .details-container{
+        width: 90%;
+        text-align: center;
+        padding: 0.8rem;
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+        line-height: 1.6rem;
+        border-radius: 15%;
+    }
+
+    /* EXPERIENCE */
+
+    #experience{
+        height: 240vh;
+    }
+
+    .experience-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .experience-details{
+        height: 80vh;
+        margin-left: 0 auto;
+    }
+
+    /* PROJECTS  */
+    #projects{
+        height: 180vh;
+     
+    }
+    .projects-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-1{
+        width: 100%;
+    }
+
+    /* CONTACT */
+
+    #contact{
+        height: 50vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 50px;
+    }
+    .contact-details{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .contact-details-1 p{
+        font-size: 0.8rem;
+    }
+
+    footer{
+       
+    }
+    .icon{
+        width: 20px;
+    }
+}
+
+/* Tablet devices */
+@media screen and (max-width:768px){
+
+}
+
+/* Small Screens,LAPTOPS */
+@media screen and (max-width:1024px){
+    
+}
+
+/* DESKTOPS */
+@media screen and (max-width:1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+}
+
+

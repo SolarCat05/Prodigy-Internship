@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HOME IMAGE */
+
+.home_img{
+    background-color:  rgba(0, 0, 0, 0.664);
+    height: 150px;
+}
+.home_img p{
+ font-size: 3rem;
+ display: flex;
+ justify-content: center;
+ padding-top: 2%;
+}
+
+/* SELECT OPTION */
+.Select{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    gap: 10px;
+}
+
+.Select p{
+    font-size: 1.7rem;
+}
+
+#country{
+    width: 200px;
+}
+
+/*  COUNTRY CARD DESIGN */
+.show_country{
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 1.8rem;
+    border: 0.3px solid gray;
+    height:fit-content;
+    width:350px;
+    margin: 0 auto;
+}
+
+.country_info{
+    padding: 10px ;
+    font-size: 1.3rem;
+}
+
+.country_flag img{
+    border-radius: 1.8rem;
+}
+
+.country_details{
+    padding: 0% 15%;
+}
